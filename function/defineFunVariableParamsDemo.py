@@ -73,7 +73,23 @@ person('lucy', 19, city= extra['city'], job = extra['job'])
 extra = {'city':'BeiJing', 'job':'Engineer'}
 person('lucy', 19,**extra)
 
+# **extra表示把extra这个dict的所有key-value用关键字参数传入到函数的**kw参数，
+# kw将获得一个dict，注意kw获得的dict是extra的一份拷贝，
+# 对kw的改动不会影响到函数外的extra。
 
+def person2(name, age, **kw):
+	try:
+		print(kw['city'])
+	except KeyError as e:
+		kw['city'] = 'NanChang'
+		print('except:', e)
+	
+	print('person2 method:\n','name', name, 'age', age, 'other', kw)
+
+extra = {'city':'BeiJing', 'job':'Engineer'}
+person2('lucy', 19,**extra)
+print(extra)
+person2('cqk', 22)
 	
 
 
