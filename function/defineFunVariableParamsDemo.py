@@ -90,6 +90,8 @@ extra = {'city':'BeiJing', 'job':'Engineer'}
 person2('lucy', 19,**extra)
 print(extra)
 person2('cqk', 22)
+
+
 	
 
 
