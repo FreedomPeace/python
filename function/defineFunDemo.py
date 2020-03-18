@@ -27,7 +27,7 @@ print(my_abs(-9))
 
 
 def quadratic(a, b, c):
-    print(b)
+    #print(b)
     x1 = (-b + math.sqrt(b * b - 4 * a * c)) / 2 / a
     x2 = (-b - math.sqrt(b * b - 4 * a * c)) / 2 / a
     return x1, x2
@@ -61,5 +61,15 @@ def null_fuc():
     """
     pass
 
-
 null_fuc()
+
+def null_fun2():
+	#age is str 
+	age = input('请输入你的年龄:') 
+	if int(age) >= 18:
+		print('adults')
+	else:
+		#print('children')
+		pass
+		
+null_fun2()		
