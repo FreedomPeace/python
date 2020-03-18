@@ -1,0 +1,26 @@
+cat filename    --查看文件
+vi filename	--编辑文件或创建文件  点击键盘的 insert 开始插入  esc退出编辑状态
+
+:q退出文件编辑  :wq 退出并保存  :q!强制退出
+
+mkdir dirname	创建文件夹
+rmdir dirname	删除文件夹
+
+rm -f filename	删除文件
+lstree 显示文件和目录由根目录开始的树形结构(2)
+mkdir dir1 创建一个叫做 ‘dir1’ 的目录’
+mkdir dir1 dir2 同时创建两个目录
+mkdir -p /tmp/dir1/dir2 创建一个目录树
+rm -f file1 删除一个叫做 ‘file1’ 的文件’
+rmdir dir1 删除一个叫做 ‘dir1’ 的目录’
+rm -rf dir1 删除一个叫做 ‘dir1’ 的目录并同时删除其内容
+rm -rf dir1 dir2 同时删除两个目录及它们的内容
+mv dir1 new_dir 重命名/移动 一个目录
+cp file1 file2 复制一个文件
+cp dir/* . 复制一个目录下的所有文件到当前工作目录
+cp -a /tmp/dir1 . 复制一个目录到当前工作目录
+cp -a dir1 dir2 复制一个目录
+ln -s file1 lnk1 创建一个指向文件或目录的软链接
+ln file1 lnk1 创建一个指向文件或目录的物理链接
+touch -t 0712250000 file1 修改一个文件或目录的时间戳 - (YYMMDDhhmm)
+file file1 outputs the mime type of the file as text
