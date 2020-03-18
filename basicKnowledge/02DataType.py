@@ -21,4 +21,3 @@ sheep
 """
 print(a)
 print(type(a))
-
