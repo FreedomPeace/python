@@ -15,10 +15,22 @@ def normalize(name):
 L1 = ['adam', 'LISA', 'barT']
 print(list(map(normalize, L1)))
 
+from functools import reduce
+from collections import Iterable
+
+
 # Python提供的sum()函数可以接受一个list并求和，请编写一个prod()函数，可以接受一个list并利用reduce()求积：
-#
-# print('3 * 5 * 7 * 9 =', prod([3, 5, 7, 9]))
-# if prod([3, 5, 7, 9]) == 945:
-#     print('测试成功!')
-# else:
-#     print('测试失败!')
+def prod(L):
+    if not isinstance(L, Iterable):
+        print("is not a iterable obj")
+        return
+
+    return reduce(lambda x, y: x * y, L)
+
+
+print(prod(33))
+print('3 * 5 * 7 * 9 =', prod([3, 5, 7, 9]))
+if prod([3, 5, 7, 9]) == 945:
+    print('测试成功!')
+else:
+    print('测试失败!')
