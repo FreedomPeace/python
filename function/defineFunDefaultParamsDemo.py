@@ -52,7 +52,7 @@ enroll('cqk','M')
 enroll('lily', 'F', 22, 'Japan')
 enroll('lucy', 'F', 18)
 enroll('rose', 'F', city='American')
-
+enroll('jack', 'M',age = 99, city = 'fuzhou')
 #默认参数很有用，但使用不当，就会掉入坑里
 #演示如下
 
